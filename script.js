@@ -5,12 +5,15 @@ function firstNonRepeatedChar(str) {
         // Check if the current character is not repeated in the entire string
         if (str.indexOf(currentChar) === str.lastIndexOf(currentChar)) {
             return currentChar;
-		
-		else{
+			// if(str.charAt(i)!=str.charAt(i+1)){
+			// return str.charAt(i);
+			// }
+		}else{
 			i++;
 		}
+
 		}
 	return null;
 	}
-const input = prompt("Enter a string");
-alert(firstNonRepeatedChar(input)); 
+//const input = prompt("Enter a string");
+//alert(firstNonRepeatedChar(input)); 
